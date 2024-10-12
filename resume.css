@@ -1,0 +1,228 @@
+/* Custom styles for transparent navbar */
+.navbar-transparent {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-bottom: none;
+    background-size: cover;
+  }
+  
+  /* Cover photo section */
+  .cover-photo {
+    background: url('photo_2024-08-15_02-02-57.jpg') no-repeat center center/cover;
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+   
+  }
+  #div2{
+    background: url('photo_2024-10-12_13-27-00.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Full viewport height */
+    width: 100%;
+   
+    
+    color: white;
+
+   
+  }
+  /* Adjust the padding to prevent content overlap with the navbar */
+  .content {
+    padding-top: 100px;
+  }
+  #div3{
+border: 2px solid black;
+height: 40vh;
+width :50%
+  }
+  #div4{
+border: 2px solid black;
+float: right;
+height: 40vh;
+width: 50%;
+  }
+  .container {
+    display: flex; /* Use flexbox for layout */
+    align-items: stretch; /* Stretch items to fill container height */
+    margin-top: 50px; /* Add top margin for spacing */
+}
+.left, .right {
+    flex: 1; /* Make both divs take equal space */
+    padding: 20px; /* Add padding inside divs */
+}
+.vertical-line {
+    width: 2px; /* Width of the vertical line */
+    background-color: #000; /* Color of the vertical line */
+    margin: 0 20px; /* Margin around the vertical line */
+}
+.progress {
+    height: 30px; /* Height of the progress bar */
+    margin-bottom: 20px; /* Space between progress bars */
+}
+
+/* Define keyframes for animation */
+@keyframes progress-animation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress);
+    }
+}
+
+/* Apply animation to progress bars */
+.progress-bar {
+    animation: progress-animation 2s forwards; /* 2 seconds animation */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    line-height: 30px; /* Center text vertically */
+}
+
+/* Set custom progress for each skill using CSS variables */
+.python .progress-bar {
+    --progress: 80%;
+    background-color: #007bff; /* Bootstrap primary color */
+}
+.c .progress-bar {
+    --progress: 80%;
+    background-color: #4e0a63; /* Bootstrap primary color */
+}
+
+.java .progress-bar {
+    --progress: 70%;
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+.html .progress-bar {
+    --progress: 90%;
+    background-color: #d10c0c; /* Bootstrap danger color */
+}
+
+.css .progress-bar {
+    --progress: 85%;
+    background-color: #0c8b1f; /* Bootstrap warning color */
+}
+.js .progress-bar {
+    --progress: 50%;
+    background-color: #0c8b1f; /* Bootstrap warning color */
+}
+.bootstrap .progress-bar {
+    --progress: 50%;
+    background-color: #c87c0b; /* Bootstrap warning color */
+}
+.Django .progress-bar {
+    --progress: 25%;
+    background-color: #ffc107; /* Bootstrap warning color */
+}
+.mysql .progress-bar {
+    --progress: 25%;
+    background-color: #600a32; /* Bootstrap warning color */
+}
+.card-img-top {
+    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Set a fixed width for images */
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and fill */
+    margin: 10px auto; /* Center the image */
+}
+.achievement-icon {
+    font-size: 50px; /* Size of the achievement icon */
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 15px;
+}
+
+.card {
+    margin: 20px; /* Space around each card */
+}
+
+.achievements-section {
+    padding: 50px 0; /* Padding around the achievements section */
+}
+
+.achievements-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.projects-section {
+    padding: 50px 0;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Hover animation */
+.card:hover {
+    transform: scale(1.05); /* Scale up the card slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.project-icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Initial visibility with low opacity */
+.card-body {
+     /* Slight visibility */
+    transform: translateY(10px); /* Slight downward shift */
+   
+}
+
+/* Increase visibility on hover */
+.card:hover .card-body {
+    opacity: 1; /* Full visibility */
+    transform: translateY(0); /* Move to original position */
+}
+hr{
+    border: 2px solid black;
+}
+.footer {
+    background: linear-gradient(135deg, #0d47a1, #8e24aa); /* Dark blue to purple gradient */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer .social-icons i:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+.letter {
+    display: inline-block; /* Allows each letter to be animated individually */
+    opacity: 0; /* Start with letters hidden */
+    transform: translateY(20px); /* Slightly shift the letters down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and transform */
+    color: #000;
+}
+
+.visible {
+    opacity: 1; /* Full visibility */
+    transform: translateY(0); /* Move to original position */
+}
+
